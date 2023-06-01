@@ -261,7 +261,6 @@ ul{
 }
 
 .testimonials__inner{
-    max-width: inherit;
     display: flex;
     justify-content: flex-end;
 }
