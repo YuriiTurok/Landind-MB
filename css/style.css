@@ -1,0 +1,708 @@
+html{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Raleway', 'Montserrat', sans-serif;
+}
+
+html, body{
+    height: 100%;
+}
+
+*, *::after, *::before{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul{
+    list-style: none;
+}
+
+.container{
+    max-width: 1260px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.container-overall{
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section__title{
+    color: #49ABC5;
+    font-size: 44px;
+    font-weight: 800;
+    line-height: 44px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    padding: 120px 0 80px;
+}
+
+.header{
+    background-color: #17181F;
+}
+
+.header__inner{
+   font-family: 'Raleway', sans-serif;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   letter-spacing: 0.08em;
+}
+
+.logo{
+    text-transform: uppercase;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    line-height: 20px;
+}
+
+.logo__name{
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 0.08em;
+}
+
+.logo__post{
+   font-size: 12px;
+   font-weight: 300;
+   letter-spacing: 0.11em;
+}
+
+.menu{
+   padding: 36px 0;
+   line-height: 16px;
+}
+
+.menu__list{
+    display: flex;
+    gap: 48px;
+}
+
+.menu__list-link{
+    color: #768095;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* ------------------- */
+
+.dream{
+    font-family: 'Montserrat', sans-serif;
+    background-image: url('../images/Mercedes_1.svg');
+    height: 100vh;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.dream__title{
+    text-transform: uppercase;
+    line-height: 80px;
+    letter-spacing: 0.03em;
+    padding-top: 92px;
+    position: relative;
+}
+
+.dream__title-initial{
+    color: #FFFFFF;
+    font-family: 'Raleway', sans-serif;
+    font-size: 56px;
+    font-weight: 400;
+}
+.dream__title-derived{
+    color: #49ABC5;
+    font-size: 56px;
+    font-weight: 700;
+}
+
+.dream__aside{
+    display: flex;
+    flex-direction: column;
+    color: #FFFFFF;
+    text-align: center;
+    background: rgba(23, 24, 31, 0.8);
+    backdrop-filter: blur(5px);
+    position: absolute;
+    right: 0;
+    top: 88px;
+    bottom: -88px;
+}
+
+.aside__helping{
+    padding: 85px 0 48px;
+}
+
+.helping-text{
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 32px;
+}
+
+.aside__specialist{
+    text-transform: uppercase;
+    padding: 80px;
+    background-color: #49ABC5;
+}
+
+.specialist-name{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.specialist-position{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 16px;
+    padding-top: 24px;
+}
+
+.aside__brand{
+    padding: 48px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.brand-badge{
+    margin-right: 48px;
+}
+
+.aside-content{
+    padding: 48px 0 93px;
+}
+
+.aside-content__ip{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0.05em;
+}
+
+.aside-content__text{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #768095;
+    padding: 24px 0;
+}
+
+.aside-content__socials{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+/*-----------------*/
+
+.meet{
+    background-color: #17181F;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 176px;
+}
+
+.meetoscar{
+    text-align: center;
+}
+
+.meet__inner{
+    display: flex;
+    justify-content: space-between;
+    gap: 109px;
+}
+
+.meet__item{
+    padding: 16px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.04em;
+    margin-bottom: 24px;
+}
+
+.meet__item-active{
+    background-color: #49ABC5;
+}
+
+.meet__item:hover{
+    background-color: #49ABC5;
+    cursor: pointer;
+    transition: all 0.10s ease;
+}
+
+.meet__description{
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 48px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 32px;
+    color: #FFFFFF;
+    height: 100%;
+}
+
+.testimonials{
+    font-family: 'Montserrat', sans-serif;
+    background-image: url('../images/Mercedes_2.svg');
+    height: 100vh;
+    background-size: cover;
+}
+
+.testimonials__inner{
+    max-width: inherit;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.testimonials__overall{
+    max-width: 700px;
+    padding: 80px;
+    margin-top: 120px;
+    background-color: rgba(23, 24, 31, 0.8);
+    backdrop-filter: blur(10px);
+}
+
+.overall__testimonials-initial{
+    display: flex;
+    justify-content: space-between;
+}
+
+.testimonials-initial__name{
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+}
+
+.testimonials-initial__icons{
+    display: flex;
+    gap: 16px;
+}
+
+.icon__testimonials-rearward{
+    display: block;
+    width: 44px;
+    height: 44px;
+    background-color: #49ABC5;
+    opacity: 0.3;
+}
+
+.icon__testimonials-forward{
+    display: block;
+    width: 44px;
+    height: 44px;
+    background-color: #49ABC5;
+}
+
+.overall__testimonials-average{
+    margin-top: 48px;
+}
+
+.testimonials-average__text{
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 32px;
+}
+
+
+.lease-transfer{
+    background-color: #17181F;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 176px;
+}
+
+.lease-transfer__inner{
+    display: flex;
+    justify-content: space-between;
+    gap: 57px;
+}
+
+.lease-transfer__overall{
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 48px;
+}
+
+.overall-content{
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 32px;
+}
+
+.key-button{
+    display: block;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.04em;
+    padding: 32px 0;
+    background-color: #49ABC5;
+    width: 271px;
+    text-align: center;
+}
+
+.contact{
+    background-color: #17181F;
+    background-image: url('../images/Mercedes_3.svg');
+    background-size: cover;
+    background-position: 50%;
+    padding-bottom: 196px;
+}
+
+.contact__inner{
+    background-color: #17181F;
+    padding: 48px 60px 48px 48px;
+}
+
+.contact__profile{
+    display: flex;   
+}
+
+.contact__profile-photo{
+    width: 336px;
+    height: 336px;
+}
+
+.profile-photo{
+    width: 100%;
+    height: 100%;
+}
+
+.contact__profile-content{
+    padding-left: 48px;
+    letter-spacing: 0.04em;
+}
+
+.profile-content-title{
+    font-size: 44px;
+    font-weight: 600;
+    line-height: 44px;
+    color: #FFFFFF;
+}
+
+.title-second{
+    font-weight: 300;
+}
+
+.profile-content__list{
+    font-family: 'Montserrat', sans-serif;
+    padding: 44px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.profile-content__item{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    color: #768095;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 16px;
+}
+
+.contact__profile-description{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    display: flex;
+    margin-top: 84px;
+    gap: 43px;
+}
+
+.profile-description__items{
+    max-width: 282px;
+    display: flex;
+    flex-direction: column;
+}
+
+.items-text{
+    color: #768095;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+.items-ip{
+    color: #FFFFFF;
+    font-weight: 400;
+    line-height: 19.5px;
+    letter-spacing: 0.04em;
+    padding-top: 16px;
+}
+
+.items-email{
+    color: #FFFFFF;
+    font-weight: 400;
+    line-height: 19.5px;
+    letter-spacing: 0.04em;
+    padding-top: 16px;
+}
+
+.footer{
+    background-color: #17181F;
+    font-family: 'Raleway', sans-serif;
+}
+
+.footer__inner{
+    padding: 120px 0 58px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #768095;
+}
+
+.item-first__app{
+    display: flex;
+    gap: 24px;
+    padding-top: 48px;
+    align-items: center;
+}
+
+.footer__item-second{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.item-second__ip{
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+}
+
+.item-second__email{
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+}
+
+.item-second__text{
+    color: #768095;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.footer__menu{
+    color: #768095;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0.08em;
+}
+
+.footer__menu-item + .footer__menu-item{
+    padding-top: 24px;
+}
+
+.footer__item-fourth{
+    text-align: center;
+}
+
+.item-fourth__brand{
+    margin-bottom: 32px;
+}
+
+.footer__bottom{
+    font-family: 'Montserrat', sans-serif;
+    color: #768095;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    text-align: center;
+    padding: 32px 0 58px;
+}
+
+
+/* Addaptive */
+
+@media (max-width: 1180px){
+    .footer__inner{
+        gap: 30px;
+    }
+    .footer__item-second{
+        gap: 36px;
+    }
+}
+
+@media (max-width: 1092px){
+    .lease-transfer__inner {
+        gap: 60px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact__profile-description{
+        gap: 25px;
+    }
+    .footer__inner{
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        gap: 40px;
+    }
+    .footer__item-first, .footer__item-third{
+        margin-left: 80px;
+    }
+    .footer__item-second{
+        gap: 24px;
+    }
+    .footer__item-fourth{
+        margin-right: 165px;
+    }
+}
+
+@media (max-width: 944px){
+    .container{
+        padding: 0 20px;
+    }
+    .contact{
+        padding-bottom: 60px;
+    }
+    .contact__inner{
+        margin-bottom: 80px;
+        padding: 30px 40px;
+    }
+    .profile-content-title {
+        font-size: 42px;
+    }
+    .profile-content__list{
+        padding: 24px 0;
+    }
+    .contact__profile-description{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 45px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 800px){
+    .contact__profile {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact__profile-content{
+        padding-top: 48px;
+        padding-left: 0;
+    }
+    .contact__profile-description{
+        margin-top: 40px;
+    }
+    .footer__inner{
+        grid-template-columns: unset;
+        justify-content: center;
+    }
+    .footer__item-first, .footer__item-third,.footer__item-fourth{
+        margin: 0;
+    } 
+}
+
+@media (max-width: 640px){
+    .section__title{
+        padding: 80px 0 48px;
+    }
+    .lease-transfer__inner {
+        gap: 48px;
+    }
+    .lease-transfer{
+        padding-bottom: 80px;
+    }
+    .lease-transfer__overall {
+        padding: 24px;
+    }
+}
+
+@media (max-width: 520px){
+    .section__title{
+        line-height: 70.4px;
+    }
+    .key-button{
+        width: 335px;
+    }
+    .contact{
+        background-image: none;
+        padding-bottom: 80px;
+    }
+    .contact__inner{
+        padding: 0;
+        margin-bottom: 0;
+    }
+    .contact__profile{
+        align-items: normal;
+    }
+    .profile-content-title{
+        font-size: 44px;
+        line-height: 61.6px;
+        word-spacing: 100vw;
+    }
+    .profile-content__list{
+        padding: 44px 0;
+    }
+    .profile-content__item{
+        color: #B9C1D1;
+    }
+    .contact__profile-description{
+        text-align: unset;
+        align-items: normal;
+        gap: 48px;
+    }
+    .items-text{
+        color: #B9C1D1;
+    }
+    .footer__inner{
+        padding: 80px 0 48px;
+        justify-content: unset;
+        gap: 64px;
+    }
+    .item-second__ip, .item-second__email{
+        font-size: 20px;
+    }
+    .item-second__text{
+        color: #B9C1D1;
+        line-height: 24px;
+    }
+    .footer__menu{
+        color: #B9C1D1;
+    }
+    .footer__item-fourth{
+        text-align: unset;
+    }
+    .item-fourth__brand{
+        margin-left: 69px;
+    }
+    .footer__bottom{
+        padding: 48px 0 80px;
+        color: #B9C1D1;
+        line-height: 20px;
+    }
+}
+
+
+
