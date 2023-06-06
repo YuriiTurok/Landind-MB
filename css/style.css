@@ -49,14 +49,41 @@ ul{
 
 .header{
     background-color: #17181F;
+    font-family: 'Raleway', sans-serif;
 }
 
 .header__inner{
-   font-family: 'Raleway', sans-serif;
    display: flex;
    justify-content: space-between;
    align-items: center;
    letter-spacing: 0.08em;
+}
+
+.header__burger-btn{
+    display: none;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    background-color: inherit;
+    z-index: 2;
+}
+
+.burger-btn__line{
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: #FFFFFF;
+    left: 5px;
+}
+
+.burger-btn__line:nth-child(1){
+    transform: translateY(-10px);
+}
+
+.burger-btn__line:nth-child(3){
+    transform: translateY(10px);
 }
 
 .logo{
@@ -233,7 +260,7 @@ ul{
     margin-bottom: 24px;
 }
 
-.meet__item-active{
+.meet__item.active{
     background-color: #49ABC5;
 }
 
@@ -251,6 +278,11 @@ ul{
     line-height: 32px;
     color: #FFFFFF;
     height: 100%;
+    display: none;
+}
+
+.meet__description.active{
+    display: block;
 }
 
 .testimonials{
@@ -557,9 +589,6 @@ ul{
         flex-direction: column;
         align-items: center;
     }
-    .contact__profile-description{
-        gap: 25px;
-    }
     .footer__inner{
         display: grid;
         grid-template-columns: repeat(2, 2fr);
@@ -576,10 +605,43 @@ ul{
     }
 }
 
-@media (max-width: 944px){
+@media (max-width: 992px){
     .container{
         padding: 0 20px;
     }
+    .logo{
+        position: relative;
+        z-index: 2;
+    }
+    .header__burger-btn{
+        display: block;
+    }
+
+    .menu__list{
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(6, 7, 8, 0.8);
+        backdrop-filter: blur(15px);
+        display: block;
+        padding-top: 120px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: transform .5s;
+    }
+
+    .menu__list-link{
+        font-size: 22px;
+        display: block;
+        padding: 10px 0;
+    }
+
+
+
+
     .contact{
         padding-bottom: 60px;
     }
