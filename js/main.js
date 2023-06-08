@@ -22,3 +22,18 @@ meetItems.forEach(function(item) {
         }
     });
 });
+
+
+let burgerBtn = document.querySelector('.header__burger-btn');
+let menuList = document.querySelector('.menu__list');
+
+burgerBtn.addEventListener("click", function() {
+    if (burgerBtn.classList.contains('active')){
+        burgerBtn.classList.remove('active');
+        menuList.classList.remove('active');
+    }
+    else {
+        burgerBtn.classList.add('active');
+        menuList.classList.add('active');
+    }
+});
