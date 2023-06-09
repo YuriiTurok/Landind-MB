@@ -145,10 +145,15 @@ ul{
     font-size: 56px;
     font-weight: 400;
 }
+
 .dream__title-derived{
     color: #49ABC5;
     font-size: 56px;
     font-weight: 700;
+}
+
+.dream__title-text{
+    line-height: 42px;
 }
 
 .dream__aside{
@@ -283,7 +288,7 @@ ul{
     display: block;
 }
 
-.meet__description.mobile-menu.active{
+.meet__description.mobile-menu{
     display: none;
 }
 
@@ -737,9 +742,39 @@ ul{
     .meet__item{
         margin-top: 24px;
     }
+    .dream {
+        height: 100%;
+        background-position: 43% 50%;
+    }
+    .dream__title{
+        text-align: center;
+    }
+    .dream__aside{
+        position: relative;
+        margin-bottom: 780px;
+        top: 780px;
+    }
+    .aside__helping {
+        padding: 80px 90px;
+        background-color:#17181F;
+    }
+    .aside__specialist {
+        padding: 80px 0;
+    }
+    .aside__brand {
+        padding: 80px 32px;
+        background-color: #17181F;
+    }
+    .aside-content {
+        padding: 24px 74px;
+        background-color: #17181F;
+    }
 }
 /*-----------------------------*/
 @media (max-width: 800px){
+    .header {
+        background-color: #0E1115;
+    }
     .meet__description{
         padding: 24px;
     }
@@ -767,11 +802,42 @@ ul{
     .section__title{
         padding: 80px 0 48px;
     }
+    .dream {
+        height: unset;
+        background-position: 23% 50%;
+    }
+    .dream__title{
+        text-align: center;
+        padding-top: 120px;
+    }
+    .dream__title-initial {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 51.2px;
+    }
+    .dream__title-derived {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 51.2px;
+        display: block;
+    }
+    .aside-content__text{
+        line-height: 26px;
+    }
     .section__title.meetoscar{
         padding: 80px 0 24px;
+        line-height: 44px;
     }
     .meet {
         padding-bottom: 56px;
+    }
+    .testimonials {
+        height: 100%;
+    }
+    .testimonials__overall {
+        max-width: 700px;
+        padding: 24px;
+        margin: 78px 0;
     }
     .lease-transfer__inner {
         gap: 48px;
